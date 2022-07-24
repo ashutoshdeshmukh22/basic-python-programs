@@ -1,0 +1,7 @@
+existingfile = input("Enter existing file: ")
+newfile = input("Enter the name for new file: ")
+f1 = open(existingfile, "rb")
+f2 = open(newfile, "wb")
+data = f1.read()
+f2.write(data)
+print("New page created from old image")
